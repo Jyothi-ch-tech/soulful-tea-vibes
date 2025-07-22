@@ -137,4 +137,49 @@ footer {
 .chai-steps ul, .chai-steps ol {
   padding-left: 1.2rem;
 }
+/* 🌿 Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
