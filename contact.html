@@ -70,28 +70,38 @@
   <section class="contact-container">
     <h2>Let’s Sip Together!</h2>
     <form action="https://formsubmit.co/chinthakulajyothi6@gmail.com" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
+  <!-- Redirect to your home page after form submission -->
+  <input type="hidden" name="_next" value="https://jyothi-ch-tech.github.io/soulful-tea-vibes/">
 
-      <label for="tea">Your Favorite Tea</label>
-      <select id="tea" name="tea" required>
-        <option value="">-- Select a Tea --</option>
-        <option>Masala Chai</option>
-        <option>Green Tea</option>
-        <option>Ginger Tea</option>
-        <option>Herbal Infusion</option>
-        <option>Iced Tea</option>
-        <option>Other</option>
-      </select>
+  <!-- Disable CAPTCHA (optional) -->
+  <input type="hidden" name="_captcha" value="false">
 
-      <label for="message">Message or Tea Thoughts</label>
-      <textarea id="message" name="message" rows="4" placeholder="Share your tea love..."></textarea>
+  <!-- Honeypot to prevent spam -->
+  <input type="text" name="_honey" style="display:none">
 
-      <button type="submit">Send Message ☕</button>
-    </form>
+  <label for="name">Your Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Your Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="tea">Your Favorite Tea</label>
+  <select id="tea" name="tea" required>
+    <option value="">-- Select a Tea --</option>
+    <option>Masala Chai</option>
+    <option>Green Tea</option>
+    <option>Ginger Tea</option>
+    <option>Herbal Infusion</option>
+    <option>Iced Tea</option>
+    <option>Other</option>
+  </select>
+
+  <label for="message">Message or Tea Thoughts</label>
+  <textarea id="message" name="message" rows="4" placeholder="Share your tea love..."></textarea>
+
+  <button type="submit">Send Message ☕</button>
+</form>
   </section>
 
   <footer style="text-align: center; margin-top: 40px;">
