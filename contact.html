@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | ChaaiAdda</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      background-color: var(--mint);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      padding: 0.8rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--orange);
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e17e5c;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>ChaaiAdda 🍵</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="varieties.html">Varieties</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="chai-tips.html">Chai Tips</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+
+  <section class="contact-container">
+    <h2>Let’s Sip Together!</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="tea">Your Favorite Tea</label>
+      <select id="tea" name="tea" required>
+        <option value="">-- Select a Tea --</option>
+        <option>Masala Chai</option>
+        <option>Green Tea</option>
+        <option>Ginger Tea</option>
+        <option>Herbal Infusion</option>
+        <option>Iced Tea</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Message or Tea Thoughts</label>
+      <textarea id="message" name="message" rows="4" placeholder="Share your tea love..."></textarea>
+
+      <button type="submit">Send Message ☕</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Made with ☕ and ❤️ by You</p>
+  </footer>
+</body>
+</html>
